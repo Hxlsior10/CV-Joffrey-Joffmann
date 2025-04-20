@@ -357,12 +357,15 @@ header {
 @media (max-width: 992px) {
     .container {
         grid-template-columns: 1fr;
+        margin-top: 0;
+        padding: 20px;
     }
     
     .header-content {
         flex-direction: column;
         text-align: center;
         gap: 30px;
+        padding: 20px;
     }
     
     .profile-info {
@@ -381,15 +384,140 @@ header {
     .sidebar {
         position: static;
     }
+    
+    .experience-card {
+        padding: 20px;
+    }
+    
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
 }
 
 @media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 60vh;
+        padding: 20px 5%;
+    }
+    
     .profile-info h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .profile-info h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-item {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    
+    .sidebar-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .company-logo {
+        order: 1;
+        margin-bottom: 15px;
+    }
+    
+    .job-info {
+        order: 2;
+    }
+    
+    .job-title {
+        font-size: 1.3rem;
+    }
+    
+    .interests-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 15px;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-info h2 {
+        font-size: 1rem;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .contact-item {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .sidebar-section {
+        padding: 15px;
+    }
+    
+    .experience-card {
+        padding: 15px;
+    }
+    
+    .job-title {
+        font-size: 1.2rem;
+    }
+    
+    .company-location,
+    .job-date {
+        font-size: 0.85rem;
+    }
+    
+    .job-description li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .interests-list {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .interests-list li {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .skills-list li,
+    .languages-list li {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
 }
 </style>
